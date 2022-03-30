@@ -1,0 +1,17 @@
+---
+manifest_version: "1"
+name: posts
+description: ~
+roles:
+
+  - id: posts
+    provisioning:
+      strategy: create
+      deferred: false
+    dna:
+      bundled: "../dna/workdir/posts.dna"
+      properties: ~
+      uuid: ~
+      version: ~
+      clone_limit: 0
+

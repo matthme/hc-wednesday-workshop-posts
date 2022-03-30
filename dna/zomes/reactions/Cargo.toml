@@ -1,0 +1,16 @@
+[package]
+edition = "2018"
+name = "reactions"
+version = "0.0.1"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "reactions"
+
+[dependencies]
+serde = "1"
+derive_more = "0"
+hc_zome_reactions = {git = "https://github.com/holochain-open-dev/reactions", rev = "for-hdk-v0.0.122", package = "hc_zome_reactions"}
+
+
+hdk = {version="0.0.122", features = ["encoding"]}

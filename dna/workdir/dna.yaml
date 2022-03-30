@@ -1,0 +1,15 @@
+---
+manifest_version: "1"
+name: posts
+uuid: 00000000-0000-0000-0000-000000000000
+properties: ~
+zomes:
+  - name: posts
+    bundled: ../../target/wasm32-unknown-unknown/release/posts.wasm
+  - name: comments
+    bundled: ../../target/wasm32-unknown-unknown/release/comments.wasm
+  - name: reactions
+    bundled: ../../target/wasm32-unknown-unknown/release/reactions.wasm
+  - name: profiles
+    bundled: ../../target/wasm32-unknown-unknown/release/profiles.wasm
+
